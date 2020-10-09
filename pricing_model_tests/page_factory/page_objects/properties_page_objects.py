@@ -1,0 +1,18 @@
+class Properties(object):
+    properties_sidebar = '//a[contains(., "Properties")]'
+    properties_header = '#top_h4>h4:nth-child(1)'
+    property_list = '//table/tbody/tr/td[1]/a'
+    property_details_header = '//h5[1]'
+    property_details_name = '//h4[1]'
+    room_type_family_room = '//td[contains(., "Family Room")]'
+    export_csv_button = "//button[@name='CSV_export_button' and @data-roomtype-name='Family Room']"
+    room_type_list = '//table/tbody/tr/td[1]'
+    main_settings = '//div[@class="mb-4"][1]'
+    quality_level = 'id_quality_level'
+    gender = 'id_gender'
+    main_settings_cluster = 'id_rt_cluster'
+    normal_price = '#id_normal_price'
+    floor_price = '#id_floor_price'
+    ceiling_price = '#id_ceiling_price'
+    save_settings = '.btn-sm'
+    success_message = '.alert-success'

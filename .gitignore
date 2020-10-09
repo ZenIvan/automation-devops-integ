@@ -1,0 +1,10 @@
+/boilerplates/
+/assets/
+*.pyc
+.vscode
+/.idea/
+Pipfile
+Pipfile.lock
+/archived_logs/
+/latest_logs/
+/downloaded_files/
