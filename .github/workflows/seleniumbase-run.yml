@@ -70,5 +70,9 @@ jobs:
 
     - name: Test seleniumbase test file using pytest command
       run: |
+        cd /home/runner/work/automation-devops-integ/automation-devops-integ/
+        pip install virtualenv
+        cd venv/Scripts
+        activate
         cd ./smoke_tests/
         pytest pricing_smoke_tests.py --env=staging
