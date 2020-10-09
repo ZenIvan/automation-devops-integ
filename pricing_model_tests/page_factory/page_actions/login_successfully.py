@@ -26,4 +26,3 @@ class LoginSuccess(UtilityClass):
         su_password = os.getenv('SU_PMV2_PASSWORD')
         self.type(self.username, super_user)
         self.type(self.password, su_password+"\n")
-git
