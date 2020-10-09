@@ -62,8 +62,6 @@ jobs:
       if: steps.get-cache.outputs.cache-hit != 'true'
       run: |
         python -m pip install --upgrade pip
-        python3 -m venv sbase_env
-        source sbase_env/bin/activate
         pip install -U seleniumbase
         seleniumbase install chromedriver
 
