@@ -62,13 +62,13 @@ jobs:
       if: steps.get-cache.outputs.cache-hit != 'true'
       run: |
         python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -U seleniumbase
+        seleniumbase install chromedriver
 
     - name: install cached dependencies
-      if: steps.get-cache.outputs.cache-hit != 'false'
       run: pip install -r requirements.txt
 
     - name: Test seleniumbase test file using pytest command
       run: |
         cd ./smoke_tests/
-        pytest pricing_smoke_tests.py -v -s
+        pytest pricing_smoke_tests.py --env=staging
