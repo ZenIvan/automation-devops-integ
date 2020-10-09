@@ -62,7 +62,7 @@ jobs:
       if: steps.get-cache.outputs.cache-hit != 'true'
       run: |
         python -m pip install --upgrade pip
-        cd /home/runner/work/zenrooms-qa-automation/zenrooms-qa-automation/
+        cd /home/runner/work/automation-devops-integ/
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: install cached dependencies
@@ -70,5 +70,5 @@ jobs:
 
     - name: Test seleniumbase test file using pytest command
       run: |
-        cd /home/runner/work/zenrooms-qa-automation/zenrooms-qa-automation/smoke_tests
+        cd /home/runner/work/automation-devops-integ/smoke_tests
         pytest pricing_smoke_tests.py -v -s
