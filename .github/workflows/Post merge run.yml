@@ -78,5 +78,5 @@ jobs:
 
     - name: Test seleniumbase test file using pytest command
       run: |
-        cd ./login/
+        cd $GITHUB_WORKSPACE/pricing_model_tests/login/
         python -m pytest test_login.py --env=staging
