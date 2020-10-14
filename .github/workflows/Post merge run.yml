@@ -14,13 +14,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup python and checkout zenrooms-qa-automation repo
-      uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
       with:
         python-version: 3.8
+
+    - name: Checkout zenrooms-qa-automation repo
+      uses: actions/checkout@v2
+      with:
         repository: zenrooms/zenrooms-qa-automation
         token: ${{ secrets.ZEN_PAT }}
+        path: pricing_model_tests
 
     - name: Linux OS cache
       uses: actions/cache@v2
@@ -74,5 +78,5 @@ jobs:
 
     - name: Test seleniumbase test file using pytest command
       run: |
-        cd ./smoke_tests/
-        python -m pytest pricing_smoke_tests.py --env=staging
+        cd ./pricing_model_tests/login/
+        python -m pytest test_login.py --env=staging
