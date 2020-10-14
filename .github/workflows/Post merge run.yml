@@ -74,7 +74,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: install cached dependencies
-      steps.get-cache.outputs.cache-hit != 'false'
+      if: steps.get-cache.outputs.cache-hit != 'false'
       run: pip install -r requirements.txt
 
     - name: Test seleniumbase test file using pytest command
