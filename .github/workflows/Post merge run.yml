@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: zenrooms/zenrooms-qa-automation
-        token: ${{ secrets.PAT }}
+        token: ${{ secrets.ZEN_PAT }}
         path: smoke_tests
 
     - name: Linux OS cache
