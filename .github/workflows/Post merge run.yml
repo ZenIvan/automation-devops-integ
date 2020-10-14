@@ -15,14 +15,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-
-    - name: Checkout zenrooms-qa-automation repo
+    - name: Setup python and checkout zenrooms-qa-automation repo
       uses: actions/checkout@v2
       with:
+        python-version: 3.8
         repository: zenrooms/zenrooms-qa-automation
         token: ${{ secrets.ZEN_PAT }}
         path: smoke_tests
