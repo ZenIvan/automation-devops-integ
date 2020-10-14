@@ -20,6 +20,13 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Checkout zenrooms-qa-automation repo
+      uses: actions/checkout@v2
+      with:
+        repository: zenrooms/zenrooms-qa-automation
+        token: ${{ secrets.PAT }}
+        path: smoke_tests
+
     - name: Linux OS cache
       uses: actions/cache@v2
       if: startsWith(runner.os, 'Linux')
