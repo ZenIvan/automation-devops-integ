@@ -21,7 +21,6 @@ jobs:
         python-version: 3.8
         repository: zenrooms/zenrooms-qa-automation
         token: ${{ secrets.ZEN_PAT }}
-        path: smoke_tests
 
     - name: Linux OS cache
       uses: actions/cache@v2
