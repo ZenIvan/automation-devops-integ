@@ -24,7 +24,6 @@ jobs:
       with:
         repository: zenrooms/zenrooms-qa-automation
         token: ${{ secrets.ZEN_PAT }}
-        path: pricing_model_tests
 
     - name: Linux OS cache
       uses: actions/cache@v2
@@ -79,5 +78,5 @@ jobs:
 
     - name: Test seleniumbase test file using pytest command
       run: |
-        cd ./pricing_model_tests/login/
+        cd /zenrooms-qa-automation/pricing_model_tests/login/
         python -m pytest test_login.py --env=staging
