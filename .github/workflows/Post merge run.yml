@@ -79,4 +79,14 @@ jobs:
     - name: Test seleniumbase test file using pytest command
       run: |
         cd $GITHUB_WORKSPACE/pricing_model_tests/login/
-        python -m pytest test_login.py --env=staging
+        python -m pytest test_login.py --env=staging --junit-xml=../../reports/report.xml
+
+    - name: Setup testspace dashboard connection
+      uses: testspace-com/setup-testspace@v1
+        with:
+          domain: ${{ github.repository_owner }}
+          token: ${{ secrets.TESTSPACE_TOKEN }}
+    - name: Push result to Testspace server
+      run: |
+        testspace $GITHUB_WORKSPACE/reports/results.xml
+      if: always()

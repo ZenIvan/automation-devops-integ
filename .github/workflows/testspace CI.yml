@@ -14,5 +14,5 @@ jobs:
           token: ${{ secrets.TESTSPACE_TOKEN }}
       - name: Push result to Testspace server
         run: |
-          testspace results.xml
+          testspace $GITHUB_WORKSPACE/reports/results.xml
         if: always()
