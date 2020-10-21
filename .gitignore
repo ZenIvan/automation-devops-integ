@@ -9,3 +9,4 @@ Pipfile.lock
 /latest_logs/
 /downloaded_files/
 /reports/assets/
+/reports/report.html
