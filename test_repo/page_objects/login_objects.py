@@ -7,3 +7,4 @@ class LoginPage(object):
     forgot_success_header = '//h3'
     sign_out = '#signout-btn'
     login_link = "a[href*='login']"
+    prod_logout = "a[href*='logout']"

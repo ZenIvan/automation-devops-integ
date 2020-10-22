@@ -1,7 +1,7 @@
-from pricing_model_tests.login.login_utils import LoginUtility
+from test_repo.utilities.BaseClass import BaseClass
 
 
-class LoginSuccessfullyTest(LoginUtility):
+class LoginSuccessfullyTest(BaseClass):
 
     def test_login_successfully(self):
         # Login successfully page action

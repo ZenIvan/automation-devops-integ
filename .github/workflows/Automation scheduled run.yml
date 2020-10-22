@@ -71,5 +71,5 @@ jobs:
 
     - name: Test seleniumbase test file using pytest command
       run: |
-        cd ./smoke_tests/
-        python -m pytest pricing_smoke_tests.py --env=staging
+        cd ./test_repo/
+        python -m pytest test_login.py --env=staging
