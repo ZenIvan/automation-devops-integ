@@ -81,9 +81,11 @@ jobs:
         cd $GITHUB_WORKSPACE/smoke_tests/
         pytest pricing_smoke_tests.py --env=staging --alluredir=../reports/allure_results
 
-    - name: Install allure CLI and create report file
-      run: |
-        allure serve $GITHUB_WORKSPACE/reports/results.xml
+    - name: Allure reports
+      uses: afiore/action-allure-report@v0.1.0
+      with:
+        results-dir: $GITHUB_WORKSPACE/reports/allure_results
+        report-dir: $GITHUB_WORKSPACE/reports/allure_results
 
 #    - uses: testspace-com/setup-testspace@v1
 #      with:
