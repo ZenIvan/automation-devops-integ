@@ -84,8 +84,8 @@ jobs:
     - name: Allure reports
       uses: afiore/action-allure-report@v0.1.0
       with:
-        results-dir: $GITHUB_WORKSPACE/reports/
-        report-dir: $GITHUB_WORKSPACE/reports/
+        results-dir: /reports/allure-results
+        report-dir: /reports/allure-results
 
     - name: Docker run for allure reports
       run: |
