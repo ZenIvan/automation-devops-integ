@@ -79,18 +79,19 @@ jobs:
     - name: Test seleniumbase test file using pytest command
       run: |
         cd $GITHUB_WORKSPACE/smoke_tests/
-        pytest pricing_smoke_tests.py --env=staging --alluredir=../reports/allure_results
+        pytest pricing_smoke_tests.py --env=staging --alluredir=../allure_results
 
     - name: Allure reports
       uses: afiore/action-allure-report@v0.1.0
       with:
-        results-dir: /reports/
-        report-dir: /reports/
+        results-dir: allure_results
+        report-dir: allure_results
 
     - name: Docker run for allure reports
       run: |
+        cd allure_results
         docker build . -t allure-gen
-        docker run -v ${PWD}:/github/workspace/reports allure-gen allure-results allure-report
+        docker run -v ${PWD}:/github/workspace allure-gen allure-results allure-report
 
 #    - uses: testspace-com/setup-testspace@v1
 #      with:
