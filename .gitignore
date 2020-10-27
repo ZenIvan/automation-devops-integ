@@ -11,3 +11,4 @@ Pipfile.lock
 /reports/assets/
 /reports/report.html
 /venv
+/reports/allure-results/

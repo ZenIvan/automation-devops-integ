@@ -84,8 +84,13 @@ jobs:
     - name: Allure reports
       uses: afiore/action-allure-report@v0.1.0
       with:
-        results-dir: $GITHUB_WORKSPACE/reports/allure_results
-        report-dir: $GITHUB_WORKSPACE/reports/allure_results
+        results-dir: $GITHUB_WORKSPACE/reports/
+        report-dir: $GITHUB_WORKSPACE/reports/
+
+    - name: Docker run for allure reports
+      run: |
+        docker build . -t allure-gen
+        docker run -v ${PWD}:/github/workspace/reports allure-gen allure-results allure-report
 
 #    - uses: testspace-com/setup-testspace@v1
 #      with:
