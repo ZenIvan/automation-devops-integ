@@ -14,16 +14,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
 
-    - name: Checkout zenrooms-qa-automation repo
-      uses: actions/checkout@v2
-      with:
-        repository: zenrooms/zenrooms-qa-automation
-        token: ${{ secrets.ZEN_PAT }}
+#    - name: Checkout zenrooms-qa-automation repo
+#      uses: actions/checkout@v2
+#      with:
+#        repository: zenrooms/zenrooms-qa-automation
+#        token: ${{ secrets.ZEN_PAT }}
 
     - name: Linux OS cache
       uses: actions/cache@v2
@@ -77,21 +78,30 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Test seleniumbase test file using pytest command
-      run: |
-        cd $GITHUB_WORKSPACE/smoke_tests/
-        pytest pricing_smoke_tests.py --env=staging --alluredir=../allure_results
+      run: pytest ./test_repo/test_login.py --env=staging --alluredir=allure-results
+      continue-on-error: true
+
+    - name: Get Allure history
+      uses: actions/checkout@v2
+      if: always()
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
 
     - name: Allure reports
-      uses: afiore/action-allure-report@v0.1.0
+      uses: simple-elf/allure-report-action@master
       with:
-        results-dir: allure_results
-        report-dir: allure_results
+        results-dir: allure-results
+        allure_history: allure-history
 
-    - name: Docker run for allure reports
-      run: |
-        cd allure_results
-        docker build . -t allure-gen
-        docker run -v ${PWD}:/github/workspace allure-gen allure-results allure-report
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.ZEN_PAT }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
 
 #    - uses: testspace-com/setup-testspace@v1
 #      with:
