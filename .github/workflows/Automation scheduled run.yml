@@ -70,6 +70,27 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Test seleniumbase test file using pytest command
-      run: |
-        cd ./test_repo/
-        python -m pytest test_login.py --env=staging
+      run: pytest ./test_repo/test_login.py --env=staging --alluredir=allure-results
+      continue-on-error: true
+
+    - name: Get Allure history
+      uses: actions/checkout@v2
+      if: always()
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
+
+    - name: Allure reports
+      uses: simple-elf/allure-report-action@master
+      with:
+        results-dir: allure-results
+        allure_history: allure-history
+
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.ZEN_PAT }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
