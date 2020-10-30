@@ -1,0 +1,11 @@
+[ {
+  "uid" : "df631c2c188202c6",
+  "name" : "test_login_successfully",
+  "time" : {
+    "start" : 1604061398100,
+    "stop" : 1604061421885,
+    "duration" : 23785
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
