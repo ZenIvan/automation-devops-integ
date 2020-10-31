@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az70-796",
+    "children" : [ {
+      "name" : "3948-MainThread",
+      "children" : [ {
+        "name" : "test_login_successfully",
+        "uid" : "90443fcaadd8c07f",
+        "parentUid" : "1c16e14d3813bb76b7e842acc45f28c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604147798527,
+          "stop" : 1604147818650,
+          "duration" : 20123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c16e14d3813bb76b7e842acc45f28c3"
+    } ],
+    "uid" : "4ba46e0a4b115b68df202f4bb0f15c9e"
+  } ],
+  "name" : "timeline"
+}
