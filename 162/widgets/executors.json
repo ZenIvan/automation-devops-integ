@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://ZenIvan.github.io/automation-devops-integ",
+  "buildOrder" : 162,
+  "buildName" : "GitHub Actions Run #341728981",
+  "buildUrl" : "https://github.com/ZenIvan/automation-devops-integ/actions/runs/341728981",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/162/"
+} ]
