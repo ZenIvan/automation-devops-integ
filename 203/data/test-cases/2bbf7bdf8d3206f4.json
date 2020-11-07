@@ -1,0 +1,277 @@
+{
+  "uid" : "2bbf7bdf8d3206f4",
+  "name" : "test_login_successfully",
+  "fullName" : "test_repo.test_login.LoginSuccessfullyTest#test_login_successfully",
+  "historyId" : "0dea5b5b41584d7b394beb6a4972cd87",
+  "time" : {
+    "start" : 1604710563644,
+    "stop" : 1604710583082,
+    "duration" : 19438
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1604710563626,
+      "stop" : 1604710563627,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1604710583083,
+      "stop" : 1604710583084,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_repo"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "LoginSuccessfullyTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az40-174"
+  }, {
+    "name" : "thread",
+    "value" : "3963-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_repo.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 93,
+        "unknown" : 0,
+        "total" : 93
+      },
+      "items" : [ {
+        "uid" : "39c5b6acf4aa6075",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/202//#testresult/39c5b6acf4aa6075",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604708440594,
+          "stop" : 1604708459684,
+          "duration" : 19090
+        }
+      }, {
+        "uid" : "d716450b9b91a449",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/201//#testresult/d716450b9b91a449",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604667660480,
+          "stop" : 1604667679502,
+          "duration" : 19022
+        }
+      }, {
+        "uid" : "920f18ebe7de9663",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/200//#testresult/920f18ebe7de9663",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604667236980,
+          "stop" : 1604667251596,
+          "duration" : 14616
+        }
+      }, {
+        "uid" : "9b977f2dfa690f26",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/199//#testresult/9b977f2dfa690f26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604666842297,
+          "stop" : 1604666865991,
+          "duration" : 23694
+        }
+      }, {
+        "uid" : "25a7447a7a7718dd",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/198//#testresult/25a7447a7a7718dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604666320858,
+          "stop" : 1604666338376,
+          "duration" : 17518
+        }
+      }, {
+        "uid" : "91b74051db6efa2a",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/197//#testresult/91b74051db6efa2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604665701961,
+          "stop" : 1604665717083,
+          "duration" : 15122
+        }
+      }, {
+        "uid" : "29248e9aac1f8f87",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/196//#testresult/29248e9aac1f8f87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604664665516,
+          "stop" : 1604664685641,
+          "duration" : 20125
+        }
+      }, {
+        "uid" : "8046d2e9e95fa050",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/195//#testresult/8046d2e9e95fa050",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604625069113,
+          "stop" : 1604625081755,
+          "duration" : 12642
+        }
+      }, {
+        "uid" : "f30eaa265027e27b",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/194//#testresult/f30eaa265027e27b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604624129666,
+          "stop" : 1604624150862,
+          "duration" : 21196
+        }
+      }, {
+        "uid" : "b835492540cb1127",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/193//#testresult/b835492540cb1127",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604622015966,
+          "stop" : 1604622037570,
+          "duration" : 21604
+        }
+      }, {
+        "uid" : "20c18009ffc1d572",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/192//#testresult/20c18009ffc1d572",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604582059381,
+          "stop" : 1604582078759,
+          "duration" : 19378
+        }
+      }, {
+        "uid" : "c3b1dd933f361b1a",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/191//#testresult/c3b1dd933f361b1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604581064851,
+          "stop" : 1604581078254,
+          "duration" : 13403
+        }
+      }, {
+        "uid" : "f3d9aa1136b5c67",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/190//#testresult/f3d9aa1136b5c67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604580657278,
+          "stop" : 1604580673565,
+          "duration" : 16287
+        }
+      }, {
+        "uid" : "5e82df8df5e9b065",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/189//#testresult/5e82df8df5e9b065",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604580263316,
+          "stop" : 1604580276171,
+          "duration" : 12855
+        }
+      }, {
+        "uid" : "2fae8d4c730f882a",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/188//#testresult/2fae8d4c730f882a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604579803435,
+          "stop" : 1604579822523,
+          "duration" : 19088
+        }
+      }, {
+        "uid" : "20d27d44e301018a",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/187//#testresult/20d27d44e301018a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604579239444,
+          "stop" : 1604579252348,
+          "duration" : 12904
+        }
+      }, {
+        "uid" : "8da28fa50c8544ce",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/186//#testresult/8da28fa50c8544ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604578359864,
+          "stop" : 1604578376441,
+          "duration" : 16577
+        }
+      }, {
+        "uid" : "b15115c0480c4741",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/185//#testresult/b15115c0480c4741",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604538317898,
+          "stop" : 1604538330683,
+          "duration" : 12785
+        }
+      }, {
+        "uid" : "81182e08905f297",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/184//#testresult/81182e08905f297",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604537639576,
+          "stop" : 1604537657738,
+          "duration" : 18162
+        }
+      }, {
+        "uid" : "97d496b777a60739",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/183//#testresult/97d496b777a60739",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604535708803,
+          "stop" : 1604535729794,
+          "duration" : 20991
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2bbf7bdf8d3206f4.json",
+  "parameterValues" : [ ]
+}
