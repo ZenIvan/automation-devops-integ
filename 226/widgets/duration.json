@@ -1,0 +1,11 @@
+[ {
+  "uid" : "3209612246c24a9a",
+  "name" : "test_login_successfully",
+  "time" : {
+    "start" : 1604925990396,
+    "stop" : 1604926006616,
+    "duration" : 16220
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
