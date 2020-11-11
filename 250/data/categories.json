@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+      "children" : [ {
+        "name" : "test_login_successfully",
+        "uid" : "c2e8137abb7bfb0d",
+        "parentUid" : "58be781178e36090fc9d7dc15e56bb43",
+        "status" : "broken",
+        "time" : {
+          "start" : 1605099618851,
+          "stop" : 1605099640138,
+          "duration" : 21287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "58be781178e36090fc9d7dc15e56bb43"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
