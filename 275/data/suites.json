@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test_repo",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "LoginSuccessfullyTest",
+        "children" : [ {
+          "name" : "test_login_successfully",
+          "uid" : "e574ba7ae2bee4bd",
+          "parentUid" : "e3ed3652402373feb730d3ad29e261cc",
+          "status" : "broken",
+          "time" : {
+            "start" : 1605356716245,
+            "stop" : 1605356738641,
+            "duration" : 22396
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e3ed3652402373feb730d3ad29e261cc"
+      } ],
+      "uid" : "a7fef2060183239dbfc7e13c5b280b12"
+    } ],
+    "uid" : "f4fb9ba4f8095cba3a3cf7b6b73c2af4"
+  } ],
+  "name" : "suites"
+}
