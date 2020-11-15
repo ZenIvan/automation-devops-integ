@@ -1,0 +1,303 @@
+{
+  "uid" : "dbbdd6da7eb8cfe2",
+  "name" : "test_login_successfully",
+  "fullName" : "test_repo.test_login.LoginSuccessfullyTest#test_login_successfully",
+  "historyId" : "0dea5b5b41584d7b394beb6a4972cd87",
+  "time" : {
+    "start" : 1605401915729,
+    "stop" : 1605401930800,
+    "duration" : 15071
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+  "statusTrace" : "self = <test_repo.test_login.LoginSuccessfullyTest testMethod=test_login_successfully>\n\n    def test_login_successfully(self):\n        # Login successfully page action\n>       self.login_action(env=self.env)\n\ntest_repo/test_login.py:8: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_repo/utilities/BaseClass.py:32: in login_action\n    self.type(self.username, super_user)\n/opt/hostedtoolcache/Python/3.8.6/x64/lib/python3.8/site-packages/seleniumbase/fixtures/base_case.py:436: in type\n    self.update_text(selector, text, by=by, timeout=timeout, retry=retry)\n/opt/hostedtoolcache/Python/3.8.6/x64/lib/python3.8/site-packages/seleniumbase/fixtures/base_case.py:304: in update_text\n    element = self.wait_for_element_visible(\n/opt/hostedtoolcache/Python/3.8.6/x64/lib/python3.8/site-packages/seleniumbase/fixtures/base_case.py:3373: in wait_for_element_visible\n    return page_actions.wait_for_element_visible(\n/opt/hostedtoolcache/Python/3.8.6/x64/lib/python3.8/site-packages/seleniumbase/fixtures/page_actions.py:299: in wait_for_element_visible\n    timeout_exception(NoSuchElementException, message)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nexception = <class 'selenium.common.exceptions.NoSuchElementException'>\nmessage = '\\n Element {#id_username} was not present after 10 seconds!'\n\n    def timeout_exception(exception, message):\n        exc, message = s_utils.format_exc(exception, message)\n>       raise exc(message)\nE       selenium.common.exceptions.NoSuchElementException: Message: \nE        Element {#id_username} was not present after 10 seconds!\n\n/opt/hostedtoolcache/Python/3.8.6/x64/lib/python3.8/site-packages/seleniumbase/fixtures/page_actions.py:117: NoSuchElementException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1605401915717,
+      "stop" : 1605401915717,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1605401931163,
+      "stop" : 1605401931163,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_repo"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "LoginSuccessfullyTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az40-953"
+  }, {
+    "name" : "thread",
+    "value" : "3882-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_repo.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 51,
+        "skipped" : 0,
+        "passed" : 121,
+        "unknown" : 0,
+        "total" : 172
+      },
+      "items" : [ {
+        "uid" : "c14fd7e8ecd060d2",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/281//#testresult/c14fd7e8ecd060d2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605399655745,
+          "stop" : 1605399670857,
+          "duration" : 15112
+        }
+      }, {
+        "uid" : "4fdaae4c8431c0be",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/280//#testresult/4fdaae4c8431c0be",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605358845136,
+          "stop" : 1605358863301,
+          "duration" : 18165
+        }
+      }, {
+        "uid" : "26a8d0b2f2e0026a",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/279//#testresult/26a8d0b2f2e0026a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605358421882,
+          "stop" : 1605358441858,
+          "duration" : 19976
+        }
+      }, {
+        "uid" : "a7150d59b4b2744",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/278//#testresult/a7150d59b4b2744",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605357995583,
+          "stop" : 1605358013609,
+          "duration" : 18026
+        }
+      }, {
+        "uid" : "91b8fdc222360de4",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/277//#testresult/91b8fdc222360de4",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605357561916,
+          "stop" : 1605357579619,
+          "duration" : 17703
+        }
+      }, {
+        "uid" : "261d6dcaaedf5d3c",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/276//#testresult/261d6dcaaedf5d3c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605357163729,
+          "stop" : 1605357187209,
+          "duration" : 23480
+        }
+      }, {
+        "uid" : "e574ba7ae2bee4bd",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/275//#testresult/e574ba7ae2bee4bd",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605356716245,
+          "stop" : 1605356738641,
+          "duration" : 22396
+        }
+      }, {
+        "uid" : "735ddd72e234a97e",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/274//#testresult/735ddd72e234a97e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605355782810,
+          "stop" : 1605355804876,
+          "duration" : 22066
+        }
+      }, {
+        "uid" : "2493fcc3b7809d32",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/273//#testresult/2493fcc3b7809d32",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605316134437,
+          "stop" : 1605316156809,
+          "duration" : 22372
+        }
+      }, {
+        "uid" : "d43565322dd2488b",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/272//#testresult/d43565322dd2488b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605315320365,
+          "stop" : 1605315335551,
+          "duration" : 15186
+        }
+      }, {
+        "uid" : "b0e6f9f8ffe3509b",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/271//#testresult/b0e6f9f8ffe3509b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605313193602,
+          "stop" : 1605313208552,
+          "duration" : 14950
+        }
+      }, {
+        "uid" : "69b608b91b828e83",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/270//#testresult/69b608b91b828e83",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605273003467,
+          "stop" : 1605273018191,
+          "duration" : 14724
+        }
+      }, {
+        "uid" : "87f0920107c83109",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/269//#testresult/87f0920107c83109",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605272202366,
+          "stop" : 1605272222434,
+          "duration" : 20068
+        }
+      }, {
+        "uid" : "e4d9292969242cdd",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/268//#testresult/e4d9292969242cdd",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605271787653,
+          "stop" : 1605271806643,
+          "duration" : 18990
+        }
+      }, {
+        "uid" : "43ef7d67fc6056df",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/267//#testresult/43ef7d67fc6056df",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605271377991,
+          "stop" : 1605271398307,
+          "duration" : 20316
+        }
+      }, {
+        "uid" : "7c85430068620be9",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/266//#testresult/7c85430068620be9",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605270982806,
+          "stop" : 1605271001706,
+          "duration" : 18900
+        }
+      }, {
+        "uid" : "554dfaff37edd65e",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/265//#testresult/554dfaff37edd65e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605270440649,
+          "stop" : 1605270471363,
+          "duration" : 30714
+        }
+      }, {
+        "uid" : "a9fa0e5363d491de",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/264//#testresult/a9fa0e5363d491de",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605269412806,
+          "stop" : 1605269433383,
+          "duration" : 20577
+        }
+      }, {
+        "uid" : "665415a1fd583480",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/263//#testresult/665415a1fd583480",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605229450851,
+          "stop" : 1605229473657,
+          "duration" : 22806
+        }
+      }, {
+        "uid" : "808872deb95c2a14",
+        "reportUrl" : "https://ZenIvan.github.io/automation-devops-integ/262//#testresult/808872deb95c2a14",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: \n Element {#id_username} was not present after 10 seconds!",
+        "time" : {
+          "start" : 1605228824271,
+          "stop" : 1605228845648,
+          "duration" : 21377
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dbbdd6da7eb8cfe2.json",
+  "parameterValues" : [ ]
+}
