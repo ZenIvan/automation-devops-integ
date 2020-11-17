@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test_repo.test_login",
+    "children" : [ {
+      "name" : "test_login_successfully",
+      "uid" : "8b3143e7a35db9a7",
+      "parentUid" : "8ccebbd39f25b70ad322f68c0cc60a95",
+      "status" : "broken",
+      "time" : {
+        "start" : 1605576245751,
+        "stop" : 1605576271152,
+        "duration" : 25401
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test_repo.test_login"
+  } ],
+  "name" : "packages"
+}
