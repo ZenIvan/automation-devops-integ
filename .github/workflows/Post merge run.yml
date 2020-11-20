@@ -20,11 +20,11 @@ jobs:
       with:
         python-version: 3.8
 
-#    - name: Checkout zenrooms-qa-automation repo
-#      uses: actions/checkout@v2
-#      with:
-#        repository: zenrooms/zenrooms-qa-automation
-#        token: ${{ secrets.ZEN_PAT }}
+    - name: Checkout zenrooms-qa-automation repo
+      uses: actions/checkout@v2
+      with:
+        repository: zenrooms/zenrooms-qa-automation
+        token: ${{ secrets.ZEN_PAT }}
 
     - name: Linux OS cache
       uses: actions/cache@v2
@@ -78,7 +78,7 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Test seleniumbase test file using pytest command
-      run: pytest ./test_repo/test_login.py --env=staging --alluredir=allure-results
+      run: pytest ./smoke_tests/pricing_smoke_tests.py --env=staging --alluredir=allure-results
       continue-on-error: true
 
     - name: Get Allure history
