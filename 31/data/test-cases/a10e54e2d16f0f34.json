@@ -1,0 +1,86 @@
+{
+  "uid" : "a10e54e2d16f0f34",
+  "name" : "test_login_successfully",
+  "fullName" : "smoke_tests.pricing_smoke_tests.SmokeTestSuite#test_login_successfully",
+  "historyId" : "1222eae0eae11a8a994c64dc3e9c61a1",
+  "time" : {
+    "start" : 1605859210387,
+    "stop" : 1605859221578,
+    "duration" : 11191
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1605859210371,
+      "stop" : 1605859210371,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1605859228799,
+      "stop" : 1605859228799,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "smoke_tests"
+  }, {
+    "name" : "suite",
+    "value" : "pricing_smoke_tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "SmokeTestSuite"
+  }, {
+    "name" : "host",
+    "value" : "fv-az18-207"
+  }, {
+    "name" : "thread",
+    "value" : "4119-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "smoke_tests.pricing_smoke_tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a10e54e2d16f0f34.json",
+  "parameterValues" : [ ]
+}

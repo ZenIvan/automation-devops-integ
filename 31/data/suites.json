@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "smoke_tests",
+    "children" : [ {
+      "name" : "pricing_smoke_tests",
+      "children" : [ {
+        "name" : "SmokeTestSuite",
+        "children" : [ {
+          "name" : "test_login_successfully",
+          "uid" : "a10e54e2d16f0f34",
+          "parentUid" : "20e5da989093b8711e93f4a5fa72130f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1605859210387,
+            "stop" : 1605859221578,
+            "duration" : 11191
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_logout_successfully",
+          "uid" : "a84751d7f87c4c46",
+          "parentUid" : "20e5da989093b8711e93f4a5fa72130f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1605859221582,
+            "stop" : 1605859228798,
+            "duration" : 7216
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "20e5da989093b8711e93f4a5fa72130f"
+      } ],
+      "uid" : "1d8f1ccf976692dc3110bdc619bbbdad"
+    } ],
+    "uid" : "511fb73969e2ddbea5abef29f63d2604"
+  } ],
+  "name" : "suites"
+}

@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az18-207",
+    "children" : [ {
+      "name" : "4119-MainThread",
+      "children" : [ {
+        "name" : "test_logout_successfully",
+        "uid" : "a84751d7f87c4c46",
+        "parentUid" : "51111845e8cd92fe35966df6d5283505",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605859221582,
+          "stop" : 1605859228798,
+          "duration" : 7216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_successfully",
+        "uid" : "a10e54e2d16f0f34",
+        "parentUid" : "51111845e8cd92fe35966df6d5283505",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605859210387,
+          "stop" : 1605859221578,
+          "duration" : 11191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "51111845e8cd92fe35966df6d5283505"
+    } ],
+    "uid" : "75db46e489a8be2d060c299b9876c94e"
+  } ],
+  "name" : "timeline"
+}
